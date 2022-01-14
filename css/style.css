@@ -19,9 +19,6 @@
     justify-content: space-between;
     align-items: center;
     width: 1200px;
-}
-
-.img{
     position: relative;
 }
 
@@ -41,7 +38,7 @@ img{
     padding-top: 7px;
     position: absolute;
     z-index: 10;
-    left: 370px;
+    left: 10px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 3px 15px #ccc;
 }
@@ -56,9 +53,19 @@ img{
     padding-top: 7px;
     position: absolute;
     z-index: 10;
-    left: 1520px;
+    right: 10px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 3px 15px #ccc;
+}
+
+.autoplay-btn{
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    padding: 2px 5px;
 }
 
 .radio-container{
@@ -67,7 +74,7 @@ img{
     justify-content: space-between;
     width: 150px;
     position: absolute;
-    top: 740px;
+    bottom: 10px;
     left: 50%;
     transform: translate(-50%, -50%);
 }

@@ -22,7 +22,7 @@ new Vue({
                 this.currentIndex=this.img.length-1;
             }
         },
-        indexTiming: function(){
+        autoplay: function(){
             setInterval(() => this.currentIndex++, 3000);
         },
     }
