@@ -68,6 +68,16 @@ img{
     padding: 2px 5px;
 }
 
+.stopPlay-btn{
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+    left: 70%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
 .radio-container{
     display: flex;
     margin: 0 auto;
