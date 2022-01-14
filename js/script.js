@@ -8,7 +8,8 @@ new Vue({
             'img/wallpaper3.jpg',
             'img/wallpaper4.jpg',
         ],
-        stopplay: autoplay,
+        stopplay: this.interval,
+        statusAutoPlay: false,
     },
     methods:{
         nextImg: function(){
@@ -24,10 +25,12 @@ new Vue({
             }
         },
         autoplay: function(){
-            setInterval(() => this.nextImg(), 3000);
+            this.interval = setInterval(() => this.nextImg(), 3000);
+            this.statusAutoPlay = true;
         },
         stop: function(){
-            clearInterval(this.stopplay);
+            clearInterval(this.interval);
+            this.statusAutoPlay = false;
         }
     }
 })
