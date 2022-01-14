@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="container">
+            <h1>A Vue slider</h1>
+            <div class="slider">
+                <div @click="prevImg" class="left-button">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="img">
+                    <img :src="`${img[currentIndex]}`" alt="">
+                </div>
+                <div @click="nextImg" class="right-button">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="radio-container">
+                    <div :class="['radio-counter',  i === currentIndex ? 'active':'']" v-for="(n,i) in img"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
