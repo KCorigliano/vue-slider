@@ -7,7 +7,6 @@ new Vue({
             'img/wallpaper2.jpg',
             'img/wallpaper3.jpg',
             'img/wallpaper4.jpg',
-            'img/wallpaper5.jpg',
         ],
     },
     methods:{
@@ -22,6 +21,9 @@ new Vue({
             if (this.currentIndex<0){
                 this.currentIndex=this.img.length-1;
             }
-        }
+        },
+        indexTiming: function(){
+            setInterval(() => this.currentIndex++, 3000);
+        },
     }
 })

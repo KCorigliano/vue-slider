@@ -5,17 +5,20 @@
 }
 
 .container{
-    width: 500px;
+    width: 100%;
+    height: 100vh;
     margin: 0 auto;
     text-align: center;
+    background-color: darkslategray;
+    color: #ccc;
 }
 
 .slider{
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 1200px;
 }
 
 .img{
@@ -23,7 +26,9 @@
 }
 
 img{
-    width: 500px;
+    width: 1200px;
+    box-shadow: 0px 0px 50px #ccc;
+    border-radius: 10px;
 }
 
 .left-button{
@@ -36,7 +41,9 @@ img{
     padding-top: 7px;
     position: absolute;
     z-index: 10;
+    left: 370px;
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 3px 15px #ccc;
 }
 
 .right-button{
@@ -49,17 +56,18 @@ img{
     padding-top: 7px;
     position: absolute;
     z-index: 10;
-    left: 1180px;
+    left: 1520px;
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 3px 15px #ccc;
 }
 
 .radio-container{
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    width: 100px;
+    width: 150px;
     position: absolute;
-    top: 350px;
+    top: 740px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
