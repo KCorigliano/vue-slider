@@ -32,5 +32,8 @@ new Vue({
             clearInterval(this.interval);
             this.statusAutoPlay = false;
         }
+    },
+    mounted: function(){
+        this.autoplay();
     }
 })

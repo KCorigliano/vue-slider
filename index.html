@@ -19,16 +19,16 @@
                 <button v-else="this.statusAutoPlay === true" class="autoplay-btn" @click="stop">Stop AutoPlay</button>
                 <div v-if="this.statusAutoPlay === true" class="on"></div>
                 <div v-else="this.statusAutoPlay === false" class="off"></div>
-                <div @click="prevImg" class="left-button">
+                <div @click="prevImg" @mouseover="stop" @mouseLeave="autoplay" class="left-button">
                     <i class="fas fa-arrow-left"></i>
                 </div>
                 <div class="img">
                     <img :src="img[currentIndex]" alt="">
                 </div>
-                <div @click="nextImg" class="right-button">
+                <div @click="nextImg" @mouseover="stop" @mouseLeave="autoplay" class="right-button">
                     <i class="fas fa-arrow-right"></i>
                 </div>
-                <div class="radio-container">
+                <div class="radio-container" @mouseover="stop" @mouseLeave="autoplay">
                     <div :class="['radio-counter',  i === currentIndex ? 'active':'']" v-for="(n,i) in img"></div>
                 </div>
             </div>
